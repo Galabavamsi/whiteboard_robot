@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    
+    <!-- ============================================== -->
+    <!-- EXPLICIT ENVIRONMENT ELEMENTS (FIX FOR ERROR) -->
+    <!-- These models are defined here to fix the Gazebo Harmonic resource path issue. -->
+    <!-- ============================================== -->
+    
+    <!-- Explicit definition of the Sun light source -->
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+    </light>
+    
+    <!-- Explicit definition of the Ground Plane -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    
+    <!-- ============================================== -->
+    <!-- ROBOT ENVIRONMENT (THE WHITEBOARD) -->
+    <!-- ============================================== -->
+    
+    <!-- The Whiteboard Model (90cm x 90cm) -->
+    <model name="whiteboard">
+      <static>true</static>
+      <!-- Placed at Z=0.9 to align with the robot's Z-axis definition -->
+      <pose>0.45 0.45 0.9 0 0 0</pose> 
+      <link name="board_link">
+        <visual name="visual">
+          <!-- Size: 0.9m x 0.9m, 2cm thick -->
+          <geometry><box><size>0.9 0.9 0.02</size></box></geometry>
+          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.9 0.9 0.02</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+    
+  </world>
+</sdf>
