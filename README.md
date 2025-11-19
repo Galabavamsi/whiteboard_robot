@@ -8,6 +8,8 @@ This project simulates a 3-DOF Cartesian robotic manipulator designed to clean a
 
 ## Overview
 
+![Gazebo Simulation](gazebo_simulation.png)
+
 The robot features:
 
 - X-Axis: Prismatic gantry (Horizontal movement)
@@ -89,6 +91,8 @@ python3 analyze_results.py
 ```
 
 This will generate `robot_analysis_report.png`.
+
+![Robot Analysis Report](robot_analysis_report.png)
 
 ## Project Structure
 
