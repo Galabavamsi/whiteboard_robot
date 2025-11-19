@@ -16,6 +16,10 @@ The robot features:
 
 It performs an automated raster scan (lawnmower) path with 10cm overlap to ensure 100% coverage.
 
+## Video Demonstration
+
+[Video Link](https://drive.google.com/file/d/1fd4h1i0jYtIyKteSKLBSPGodQrlZ6nuv/view)
+
 ## Prerequisites
 
 - Ubuntu 24.04 LTS
