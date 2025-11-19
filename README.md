@@ -20,7 +20,7 @@ It performs an automated raster scan (lawnmower) path with 10cm overlap to ensur
 
 ## Video Demonstration
 
-[Video Link](https://drive.google.com/file/d/1fd4h1i0jYtIyKteSKLBSPGodQrlZ6nuv/view)
+[![Watch the video](gazebo_simulation.png)](https://drive.google.com/file/d/1fd4h1i0jYtIyKteSKLBSPGodQrlZ6nuv/view)
 
 ## Prerequisites
 
